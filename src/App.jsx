@@ -19,6 +19,7 @@ function App() {
 
   return (
     <>
+      <div className="calc">
       <h1>Mortgage Calculator</h1>
 
       <label>Loan Balance</label>
@@ -50,7 +51,7 @@ function App() {
       <button data-testid="submit" onClick={() => calculate(balance, rate, term)}>Calculate</button>
 
       <div id="output" data-testid="output">{output}</div>
-
+      </div>
     </>
   )
 }
